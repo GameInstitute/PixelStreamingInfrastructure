@@ -22,7 +22,7 @@ document.body.onload = function() {
 		});
 	config.setFlagEnabled(Flags.HoveringMouseMode, true);
 	config.setFlagEnabled(Flags.FakeMouseWithTouches, true);
-	// config.setFlagEnabled(Flags.MouseInput, false);
+	config.setFlagEnabled(Flags.MouseInput, true);
 	// config.setFlagEnabled(Flags.KeyboardInput, false);
 	// config.setFlagEnabled(Flags.TouchInput, false);
 	// config.setFlagEnabled(Flags.GamepadInput, false);
@@ -46,6 +46,9 @@ document.body.onload = function() {
 		fullScreenControlsConfig:
 		{
 			creationMode : UIElementCreationMode.Disable
+		},
+		videoQpIndicatorConfig: {
+			disableIndicator: true
 		}
 	});
 	// document.getElementById("centrebox").appendChild(application.rootElement);
